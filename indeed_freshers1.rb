@@ -62,8 +62,8 @@ end
               salary: doc.try(:css,'div.salarySnippet').try(:text).to_s.try(:strip).try(:gsub, ';', ', ').try(:gsub, "\t", ''),
               job_posted_date: ((doc.try(:css, '.result-link-bar .date').try(:text).try(:strip).try(:scan, /\d+[+]? day/).present?) ? (Time.now.utc.to_date-doc.try(:css, '.result-link-bar .date').try(:text).try(:strip).try(:to_i)) : Time.now.utc.to_date)
              }
-             # sleep(5)
-             p "#{n+=1}------>"
+             
+             
 
       write_file(result, "indeed_fresher.csv")
 
