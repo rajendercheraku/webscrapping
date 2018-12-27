@@ -50,6 +50,7 @@ end
      p "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
        sleep(5)
       # byebug
+      ##
       n=0
       response.css('.jobsearch-SerpJobCard.row.result[data-tn-component="organicJob"]').each do |doc|
       result = {
