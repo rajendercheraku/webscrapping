@@ -49,7 +49,7 @@ end
      p url
      p "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
        sleep(5)
-      # byebug
+      # #byebug
       n=0
       response.css('.jobsearch-SerpJobCard.row.result[data-tn-component="organicJob"]').each do |doc|
       result = {
